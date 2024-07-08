@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: test
+    active: local
   datasource:
     generate-unique-name: false
 #  datasource:
@@ -13,3 +13,14 @@ logging:
     org:
       springframework:
         jdbc: debug
+    #MyBatis
+    hello:
+      itemservice:
+        repository:
+          mybatis: trace
+
+#MyBatis
+mybatis:
+  type-aliases-package: hello.itemservice.domain
+  configuration:
+    map-underscore-to-camel-case: true
