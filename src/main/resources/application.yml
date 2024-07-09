@@ -11,6 +11,13 @@ logging:
     org:
       springframework:
         jdbc: debug
+      #JPA log
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
     #MyBatis
     hello:
       itemservice:

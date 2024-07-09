@@ -13,6 +13,9 @@ logging:
     org:
       springframework:
         jdbc: debug
+    #JPA log
+      hibernate:
+        SQL: DEBUG
     #MyBatis
     hello:
       itemservice:
